@@ -1,0 +1,23 @@
+.wrapper {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 30%;
+    grid-gap: 1rem;
+    overflow-x: auto;
+    scroll-snap-type: x;
+    cursor: grab;
+    scrollbar-width: thin;
+    scrollbar-color: transparent transparent;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: transparent;
+
+    }
+
+    transition-duration: 0.1s;
+
+}

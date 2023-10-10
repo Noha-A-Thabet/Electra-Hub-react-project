@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+.slider {
+    padding: 1rem;
+    border-radius: 12px;
+    display: grid;
+    grid-template-rows: min-content !important;
+    grid-gap: 1rem;
+    scroll-snap-align: start;
+}
+
+.sliderContainer {
+    width: 100%;
+    height: 350px;
+}
+
+.newsImage {
+    width: 100%;
+    inline-size: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.newsTitle {
+    color: #3a3a3a;
+    text-transform: capitalize;
+}
+
+.newsHeading {
+    color: #df0000;
+    font-weight: 700;
+    padding-top: 10px;
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.sliderInfo {
+    margin-top: -15px;
+    border-radius: 12px;
+    border-top: 0;
+    padding: 10px;
+    border: 1px solid lightgray;
+    border-top: 1px solid transparent;
+}
+
+.newsPara {
+    color: #3a3a3a;
+    line-height: 1.5;
+    word-spacing: 1px;
+    letter-spacing: .8px;
+    padding-top: 10px;
+}

@@ -1,0 +1,179 @@
+.deliverySection {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #feee00;
+    height: 12vh
+}
+
+/* start free delivery style */
+.freeDelivery h1 {
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+.freeDelivery h1 span {
+    background-color: white;
+    padding: 10px;
+    font-size: 26px;
+    border-radius: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.freeDelivery p {
+    font-weight: 600;
+}
+
+.freeDelivery p span {
+    padding: 2px 3px;
+    font-weight: bold;
+    font-size: 17px;
+    color: rgba(0, 0, 0, 0.558);
+
+}
+
+/* start useCode style */
+.useCode span {
+    font-weight: 750;
+    display: block;
+    text-align: center;
+}
+
+.useCode p {
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    width: 120px;
+    text-align: center;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+/* start media Queries */
+
+@media (max-width:600px) {
+
+    .deliverySection h1 {
+        font-size: 15px;
+    }
+
+    .deliverySection h1 span {
+        font-size: 15px;
+        padding: 6px
+    }
+
+    .deliverySection p {
+        font-size: 15px;
+    }
+
+    .useCode span {
+        font-weight: 600;
+    }
+
+    .useCode p {
+        font-size: 10px;
+        width: 90px;
+        padding: 3px;
+        margin-top: 3px;
+    }
+}
+
+/* //////////////////////////////// */
+@media (min-width:600px) {
+
+
+
+    .deliverySection h1 {
+        font-size: 16px;
+    }
+
+    .deliverySection h1 span {
+        font-size: 15px;
+        padding: 6px
+    }
+
+    .deliverySection p {
+        font-size: 16px;
+    }
+
+    .useCode span {
+        font-weight: 600;
+    }
+
+    .useCode p {
+        font-size: 14px;
+        width: 120px;
+        padding: 3px;
+        margin-top: 3px;
+    }
+}
+
+/* //////////////////////////////// */
+@media (min-width:768px) {
+
+
+
+    .deliverySection h1 {
+        font-size: 20px;
+    }
+
+    .deliverySection h1 span {
+        font-size: 20px;
+        padding: 6px
+    }
+
+    .deliverySection p {
+        font-size: 16px;
+    }
+
+    .useCode span {
+        font-weight: 700;
+    }
+
+    .useCode p {
+        font-size: 17px;
+        width: 110px;
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+}
+
+/* //////////////////////////////// */
+@media (min-width:1200px) {
+
+
+
+    .freeDelivery h1 {
+        font-size: 26px;
+    }
+
+    .deliverySection h1 span {
+        font-size: 26px;
+        padding: 10px
+    }
+
+    .freeDelivery p {
+        font-weight: 600;
+    }
+
+    .useCode span {
+        font-weight: 750;
+        display: block;
+        text-align: center;
+    }
+
+    .useCode p {
+        font-size: 18px;
+        font-weight: bold;
+        color: white;
+        background-color: black;
+        width: 120px;
+        text-align: center;
+        padding: 8px;
+        margin-top: 5px;
+    }
+
+}

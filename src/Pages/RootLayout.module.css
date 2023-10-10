@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.Navbar {
+    background-color: #df0000;
+    height: 65px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* logo */
+.logo {
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: center;
+    width: 200px;
+}
+
+.logo a {
+    color: white;
+    font-weight: 700;
+    font-size: 25px !important;
+    line-height: 15px;
+}
+
+/* search bar */
+.searchInput {
+    border: none;
+    outline: none;
+    width: 500px;
+    height: 40px !important;
+    padding-left: 20px;
+    border-radius: 9px;
+}
+
+/* navLinks */
+.navLinks {
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.navLinks ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navLinks ul li {
+    list-style-type: none;
+    padding: 1rem;
+    display: block;
+    font-size: 17px;
+}
+
+.navLinks ul li .links {
+    color: white;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: 500;
+}
+
+.navLinks ul li .links:hover {
+    cursor: pointer;
+    color: #404553ba;
+}
+
+.fa-bars,
+.toggle-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    display: none;
+}
+
+/* //////////////media queries ///////////////////// */
+
+@media (max-width:600px) {
+
+
+    .toggle-button {
+        display: block;
+        cursor: pointer;
+    }
+
+    .logo {
+        width: 300px;
+    }
+
+    .logo a {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+
+    .Navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+    }
+
+    .navLinks {
+        display: block;
+        width: 100vw;
+        transition: .2s;
+    }
+
+    .Navbar ul {
+        flex-direction: column;
+        width: 100% !important;
+        margin: auto;
+    }
+
+    .Navbar ul li {
+        text-align: center;
+    }
+
+
+    .searchInput {
+        display: none;
+    }
+
+}
+
+/* /////////////////////////////////////////// */
+
+/* @media (min-width:600px) { */
+
+/* .toggle-button {
+        display: none;
+    }
+
+    .navLinks {
+        border: 1px solid green
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .logo a {
+        font-size: 20px
+    }
+
+    .searchInput {
+        display: none;
+    }
+
+    .navLinks {
+        width: 350px;
+        display: block;
+    } */
+/* sdjkfdjshjdfgjkdfgjfgjdfgjfgddfgjdghjdfgghjdfghj */
+/* .toggle-button {
+        display: block;
+        cursor: pointer;
+    }
+
+    .logo {
+        width: 300px;
+    }
+
+    .logo a {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }
+
+    .Navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 200px;
+    }
+
+    .navLinks {
+        display: block;
+        width: 100vw;
+        transition: .2s;
+    }
+
+    .Navbar ul {
+        flex-direction: column;
+        width: 100% !important;
+        margin: auto;
+    }
+
+    .Navbar ul li {
+        text-align: center;
+    }
+
+
+    .searchInput {
+        display: none;
+    }
+
+
+} */
+
+/* /////////////////////////////////////////// */
+
+/* @media (min-width:768px) {
+    .logo {
+        width: 160px;
+    }
+
+    .logo a {
+        font-size: 20px;
+    }
+
+    .toggle-button {
+        display: none;
+    }
+
+    .searchInput {
+        display: block;
+        border: 1px solid green
+    }
+
+    .navLinks {
+        display: flex;
+        border: 2px solid green;
+        width: 100vw;
+        transition: .2s;
+    }
+
+    .navLinks {
+        width: 400px;
+    }
+} */
+
+/* @media (min-width:768px) {
+    .searchInput {
+        display: block;
+        width: 320px;
+    }
+
+    .navLinks {
+        width: 280px;
+    }
+
+} */
+
+/* @media (min-width:992px) {
+    .searchInput {
+        width: 380px;
+        height: 30px;
+    }
+
+    .navLinks {
+        width: 300px;
+    }
+
+
+} */
+/* 
+@media (min-width:1200px) {
+    .navLinks {
+        width: 400px;
+    }
+
+    .logo {
+        width: 200px;
+    }
+
+    .logo a {
+        font-size: 20px;
+    }
+
+    .searchInput {
+        width: 500px
+    }
+
+
+} */

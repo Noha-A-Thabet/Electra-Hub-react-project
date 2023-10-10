@@ -1,0 +1,141 @@
+.categoryBar {
+    height: 11vh;
+    background-color: white;
+    padding-left: 30px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid lightgray;
+}
+
+.categoryBar ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 12vh;
+}
+
+.categoryBar ul li {
+    list-style-type: none;
+    padding: 1rem;
+    display: block;
+    font-family: "Montserrat Alternates", sans-serif;
+    font-weight: 500;
+    color: #404553;
+    cursor: pointer;
+}
+
+.categoryBar ul li:hover {
+    color: #1f1e0f76;
+}
+
+.allCategories {
+    width: 15vw;
+    height: 300px !important;
+    background-color: white;
+    position: absolute;
+    top: 135px;
+    left: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.allCategories li {
+    height: 20vh;
+    width: 100%;
+    border: 1px solid lightgray;
+    text-align: center;
+    cursor: pointer;
+}
+
+.allCategories li:hover {
+    color: blue !important;
+}
+
+.menuPara {
+    color: blue;
+}
+
+.menuPara:hover {
+    cursor: pointer;
+}
+
+.menuPara i {
+    margin-left: 5px;
+}
+
+/* //////////////////////////////////////////////////// */
+/* media Queries */
+@media (max-width: 600px) {
+    .allCategories {
+        top: 285px;
+        width: 27vw;
+    }
+
+    .menuPara {
+        font-size: 15px;
+    }
+
+    .menuPara i {
+        margin: 0;
+    }
+
+    .categoryBar ul li {
+        font-size: 15px;
+    }
+}
+
+/* //////////////////////////////////////////////////// */
+
+@media (min-width: 600px) {
+    .allCategories {
+        top: 145px;
+        width: 27vw;
+    }
+
+    .categoryBar ul li {
+        font-size: 15px;
+    }
+
+    .menuPara i {
+        margin: 0;
+    }
+
+    .menuPara {
+        font-size: 15px;
+    }
+}
+
+/* //////////////////////////////////////////////////// */
+
+@media (min-width: 768px) {
+    .allCategories {
+        top: 145px;
+        width: 27vw;
+    }
+
+    .categoryBar ul li {
+        font-size: 17px;
+    }
+
+    .menuPara {
+        font-size: 17px;
+    }
+
+    .categoryBar ul li {
+        font-size: 17px;
+    }
+}
+
+/* //////////////////////////////////////////////////// */
+
+@media (min-width: 1200px) {
+    .allCategories {
+        top: 145px;
+        width: 27vw;
+    }
+}

@@ -1,0 +1,123 @@
+.slider {
+    height: 60vh;
+    overflow: hidden;
+}
+
+/*///////////////// phone slider///////////////// */
+.phoneSlider {
+    height: 30vh;
+    position: relative;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../../assests/pexels-photo-214487.jpeg");
+}
+
+.phoneSliderInfo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+
+}
+
+.phoneSliderInfo button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+
+.phoneSliderInfo button:hover {
+    cursor: pointer;
+}
+
+/*///////////////// watchslider /////////////////*/
+.watchSlider {
+    height: 30vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../assests/pexels-photo-437037.webp");
+}
+
+.watchSliderInfo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+
+}
+
+.watchSliderInfo button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.watchSliderInfo button:hover {
+    cursor: pointer;
+}
+
+/*///////////////// headsetSlider /////////////////*/
+.headsetSlider {
+    height: 30vh;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../../assests/pexels-photo-8774466.webp");
+}
+
+.headsetSliderInfo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+
+}
+
+.headsetSliderInfo button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.headsetSliderInfo button:hover {
+    cursor: pointer;
+}
+
+/* Media Queries */
+@media (max-width:600px) {}
