@@ -50,3 +50,143 @@
     letter-spacing: .8px;
     padding-top: 10px;
 }
+
+/* /////////// Media Queries */
+@media(max-width:600px) {
+    .slider {
+        border: 3px solid red;
+    }
+
+    .sliderContainer {
+        width: 100%;
+        height: 250px;
+    }
+
+    .newsTitle {
+        font-size: 18px;
+    }
+
+    .newsHeading {
+        font-size: 20px;
+    }
+
+    .newsPara {
+        font-size: 15px;
+        line-height: 1.2;
+        word-spacing: 1px;
+        letter-spacing: .7px;
+    }
+
+
+}
+
+
+/* ///////////////////////////// */
+@media(min-width:600px) {
+    .slider {
+        border: 3px solid green;
+    }
+
+    .sliderContainer {
+        width: 100%;
+        height: 250px;
+    }
+
+    .newsTitle {
+        font-size: 19px;
+    }
+
+    .newsHeading {
+        font-size: 21px;
+    }
+
+    .newsPara {
+        font-size: 16px;
+        line-height: 1.3;
+        word-spacing: 1px;
+        letter-spacing: .8px;
+    }
+}
+
+
+/* ///////////////////////////// */
+@media(min-width:768px) {
+    .slider {
+        border: 3px solid green;
+    }
+
+    .sliderContainer {
+        width: 100%;
+        height: 350px;
+    }
+
+    .newsTitle {
+        font-size: 22px;
+    }
+
+    .newsHeading {
+        font-size: 23px;
+    }
+
+    .newsPara {
+        font-size: 17px;
+        line-height: 1.3;
+        word-spacing: 1px;
+        letter-spacing: .8px;
+    }
+}
+
+/* ///////////////////////////// */
+@media(min-width:992px) {
+    .slider {
+        border: 3px solid yellow;
+    }
+
+    .sliderContainer {
+        width: 100%;
+        height: 300px;
+    }
+
+    .newsTitle {
+        font-size: 24px;
+    }
+
+    .newsHeading {
+        font-size: 23px;
+    }
+
+    .newsPara {
+        font-size: 17px;
+        line-height: 1.5;
+        word-spacing: 1px;
+        letter-spacing: .8px;
+    }
+}
+
+/* ///////////////////////////// */
+@media(min-width:1200px) {
+    .slider {
+        border: 3px solid hotpink;
+    }
+
+    .sliderContainer {
+        width: 100%;
+        height: 350px;
+    }
+
+    .newsTitle {
+        font-size: 25px;
+    }
+
+    /* .newsHeading {
+        font-size: 28px;
+    } */
+
+    .newsPara {
+        font-size: 18px;
+        line-height: 1.5;
+        word-spacing: 1px;
+        letter-spacing: .8px;
+        padding-top: 10px;
+    }
+}

@@ -21,3 +21,44 @@
     transition-duration: 0.1s;
 
 }
+
+/* /////////// Media Queries */
+
+@media(max-width:600px) {
+    .wrapper {
+        border: 3px solid gray;
+        grid-auto-columns: 50%;
+    }
+}
+
+/* ///////////////////////////////////////// */
+@media(min-width:600px) {
+    .wrapper {
+        border: 3px solid pink;
+        grid-auto-columns: 25%;
+    }
+}
+
+/* ///////////////////////////////////////// */
+@media(min-width:768px) {
+    .wrapper {
+        border: 3px solid purple;
+        grid-auto-columns: 38%;
+    }
+}
+
+/* ///////////////////////////////////////// */
+@media(min-width:992px) {
+    .wrapper {
+        border: 3px solid brown;
+        grid-auto-columns: 35%;
+    }
+}
+
+/* ///////////////////////////////////////// */
+@media(min-width:1200px) {
+    .wrapper {
+        border: 3px solid blue;
+        grid-auto-columns: 27%;
+    }
+}
