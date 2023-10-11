@@ -8,6 +8,8 @@ import MetaNews from "../assests/MMSA_TSR_mob_new (1).jpg";
 import classes from "./Home.module.css";
 import cupons from "../assests/cupon.jpg";
 import wash from "../assests/wash.jpg";
+import Category from "../Components/Category/Category";
+import DailyHighlights from "../Components/DailyHighlights/DailyHighlights";
 
 const HomePage = () => {
   const wrapperRef = useRef(null);
@@ -94,6 +96,8 @@ const HomePage = () => {
           newsPara="All-round service: delivery, assembly/installation, connection &amp; function check from 19.-"
         />
       </div>
+      {/* <Category /> */}
+      <DailyHighlights />
     </>
   );
 };

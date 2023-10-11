@@ -19,10 +19,11 @@ const Category = () => {
 
   return (
     <nav className={classes.categoryBar}>
+      <h2>Our delivery luxury categories</h2>
       <ul>
-        <li>
+        {/* <li>
           <AllCategories onSaveAllCategoris={onSaveAllCategoris} />
-        </li>
+        </li> */}
 
         <li>
           <CategoryList category={category} />

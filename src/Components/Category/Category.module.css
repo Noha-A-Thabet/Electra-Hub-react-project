@@ -4,7 +4,11 @@
     padding-left: 30px;
     margin: 0;
     padding: 0;
-    border-bottom: 1px solid lightgray;
+    /* border-bottom: 1px solid lightgray; */
+    ;
+    border: 2px solid red;
+    width: 100%;
+    padding: 20px;
 }
 
 .categoryBar ul {

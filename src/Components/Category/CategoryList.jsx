@@ -5,6 +5,7 @@ const CategoryList = (props) => {
   console.log(category);
   return (
     <div>
+      <ul></ul>
       <ul>
         {category.map((data) => {
           return <li>{data}</li>;
