@@ -3,12 +3,12 @@
 }
 
 .cover {
-    border: 5px solid purple;
     display: flex;
     align-items: center;
     justify-content: space-between;
     overflow-x: auto;
     transition: .1s;
+
 }
 
 /* For Webkit-based browsers */
@@ -29,36 +29,17 @@
     /* Track color (the area on which the thumb moves) */
 }
 
-
-.cover::before {
-    position: relative;
-    content: "";
-    left: 0;
-    top: 0;
-    z-index: 99;
-    height: 100%;
-    width: 150px;
-    background-image: linear-gradient(90deg, black, transparent);
-}
-
-.cover::after {
-    position: relative;
-    content: "";
-    right: 0;
-    top: 0;
-    z-index: 99;
-    height: 100%;
-    width: 150px;
-    background-image: linear-gradient(-90deg, black, transparent);
+.gaps {
+    margin: 0 10px;
 }
 
 .parent {
-    border: 2px solid green;
+    border: 2px solid lightgray;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    height: 500px;
+    height: 400px;
     padding: 20px;
     width: 100%;
     overflow: auto;
@@ -67,27 +48,49 @@
 }
 
 .child {
-    min-width: 600px;
+    min-width: 300px;
     height: 450px;
     margin: 1 10px;
     cursor: pointer;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .child img {
-    height: 300px;
+    height: 200px;
 }
 
 .icon {
-    color: green;
+    color: white;
     background-color: black;
-    font-size: 50px;
+    font-size: 25px;
+    padding: 15px;
     outline: none;
+}
 
+.icon:hover {
+    cursor: pointer;
 }
 
 .arrows {
     width: 100%;
     display: flex;
     justify-content: flex-end;
+    align-items: center;
+    margin: 20px;
+}
+
+.price {
+    color: black;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.prevPrice {
+    color: gray;
+    font-weight: bold;
+    text-decoration: line-through;
 }

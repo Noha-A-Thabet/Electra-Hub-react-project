@@ -4,6 +4,7 @@
       "id": 1,
       "name": "Samsung Galaxy S22",
       "type": "Mobile",
+      "prevPrice": 2000,
       "price": 899.99,
       "image": "https://m.media-amazon.com/images/I/81hhxPO7IIL._AC_SL1500_.jpg"
     },
@@ -11,6 +12,7 @@
       "id": 2,
       "name": "Dell XPS 13",
       "type": "Laptop",
+      "prevPrice": 2000,
       "price": 1199.99,
       "image": "https://m.media-amazon.com/images/I/71sBltWpikL.__AC_SX300_SY300_QL70_ML2_.jpg"
     },
@@ -18,6 +20,7 @@
       "id": 3,
       "name": "Apple Watch Series 7",
       "type": "Smartwatch",
+      "prevPrice": 2000,
       "price": 349.99,
       "image": "https://m.media-amazon.com/images/I/51oyN0scxBL.__AC_SY445_SX342_QL70_ML2_.jpg"
     },
@@ -25,6 +28,7 @@
       "id": 4,
       "name": "Google Pixelbook",
       "type": "Laptop",
+      "prevPrice": 2000,
       "price": 999.99,
       "image": "https://m.media-amazon.com/images/I/81k9WUgh9uL.__AC_SX300_SY300_QL70_ML2_.jpg"
     },
@@ -32,6 +36,7 @@
       "id": 5,
       "name": "Sony Xperia 5 III",
       "type": "Mobile",
+      "prevPrice": 2000,
       "price": 799.99,
       "image": "https://m.media-amazon.com/images/I/81chAemse9L.__AC_SX300_SY300_QL70_ML2_.jpg"
     },
@@ -39,6 +44,7 @@
       "id": 6,
       "name": "Samsung Galaxy Watch 4",
       "type": "Smartwatch",
+      "prevPrice": 2000,
       "price": 249.99,
       "image": "https://m.media-amazon.com/images/I/61645xE1Z5L.__AC_SX300_SY300_QL70_ML2_.jpg"
     },
@@ -46,6 +52,7 @@
       "id": 7,
       "name": "iPad Pro",
       "type": "Tablet",
+      "prevPrice": 2000,
       "price": 799.99,
       "image": "https://m.media-amazon.com/images/I/61is5y-+MeL._AC_SY300_SX300_.jpg"
     },
@@ -53,6 +60,7 @@
       "id": 8,
       "name": "HP Spectre x360",
       "type": "Laptop",
+      "prevPrice": 2000,
       "price": 1299.99,
       "image": "https://m.media-amazon.com/images/I/716+kEr9ZdL._AC_SX300_SY300_.jpg"
     },
@@ -60,6 +68,7 @@
       "id": 9,
       "name": "Garmin Forerunner 945",
       "type": "Smartwatch",
+      "prevPrice": 2000,
       "price": 549.99,
       "image": "https://m.media-amazon.com/images/I/61b1Olgd+VL._AC_SY300_SX300_.jpg"
     },
@@ -67,6 +76,7 @@
       "id": 10,
       "name": "iPad Air",
       "type": "Tablet",
+      "prevPrice": 2000,
       "price": 599.99,
       "image": "https://m.media-amazon.com/images/I/61ULwAcGldL.__AC_SY445_SX342_QL70_ML2_.jpg"
     },
@@ -74,6 +84,7 @@
       "id": 11,
       "name": "OnePlus 9 Pro",
       "type": "Mobile",
+      "prevPrice": 2000,
       "price": 699.99,
       "image": "https://m.media-amazon.com/images/I/71koYhbr-3S.__AC_SX300_SY300_QL70_ML2_.jpg"
     },
@@ -81,6 +92,7 @@
       "id": 12,
       "name": "Lenovo Yoga C940",
       "type": "Laptop",
+      "prevPrice": 2000,
       "price": 1099.99,
       "image": "https://m.media-amazon.com/images/I/71t0nWRDYcL.__AC_SX300_SY300_QL70_ML2_.jpg"
     },
@@ -88,6 +100,7 @@
       "id": 13,
       "name": "Samsung Galaxy Watch Active 2",
       "type": "Smartwatch",
+      "prevPrice": 2000,
       "price": 199.99,
       "image": "https://m.media-amazon.com/images/I/61IXTK4JHWL._AC_SX679_.jpg"
     },
@@ -95,6 +108,7 @@
       "id": 14,
       "name": "Amazon Fire HD 10",
       "type": "Tablet",
+      "prevPrice": 2000,
       "price": 149.99,
       "image": "https://m.media-amazon.com/images/I/81bcQZJbiJL._AC_SX679_.jpg"
     },
@@ -102,6 +116,7 @@
       "id": 15,
       "name": "MacBook Air",
       "type": "Laptop",
+      "prevPrice": 2000,
       "price": 1299.99,
       "image": "https://m.media-amazon.com/images/I/71uJwr1IrZL.__AC_SY445_SX342_QL70_ML2_.jpg"
     },
@@ -109,6 +124,7 @@
       "id": 16,
       "name": "Fossil Gen 5",
       "type": "Smartwatch",
+      "prevPrice": 2000,
       "price": 229.99,
       "image": "https://m.media-amazon.com/images/I/51X4jhtzlEL._AC_UY879_.jpg"
     },
@@ -116,6 +132,7 @@
       "id": 17,
       "name": "Samsung Galaxy Tab S7",
       "type": "Tablet",
+      "prevPrice": 2000,
       "price": 649.99,
       "image": "https://m.media-amazon.com/images/I/61FwTVP+KjL._AC_SX300_SY300_.jpg"
     },
@@ -123,6 +140,7 @@
       "id": 18,
       "name": "iPhone 13",
       "type": "Mobile",
+      "prevPrice": 2000,
       "price": 999.99,
       "image": "https://m.media-amazon.com/images/I/616dWFinzLL.__AC_SY445_SX342_QL70_ML2_.jpg"
     },
@@ -130,6 +148,7 @@
       "id": 19,
       "name": "Asus ROG Zephyrus G14",
       "type": "Laptop",
+      "prevPrice": 2000,
       "price": 1499.99,
       "image": "https://m.media-amazon.com/images/I/81BYe63-eJL.__AC_SX300_SY300_QL70_ML2_.jpg"
     },
@@ -137,6 +156,7 @@
       "id": 20,
       "name": "Huawei MatePad Pro",
       "type": "Tablet",
+      "prevPrice": 2000,
       "price": 699.99,
       "image": "https://m.media-amazon.com/images/I/51HxLMWrFML.__AC_SX300_SY300_QL70_ML2_.jpg"
     },

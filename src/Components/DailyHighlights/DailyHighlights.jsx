@@ -6,6 +6,7 @@ const DailyHighlights = () => {
   return (
     <div className={classes.daily}>
       <h1>Daily Highlight</h1>
+
       <AllDailyHighlights />
     </div>
   );

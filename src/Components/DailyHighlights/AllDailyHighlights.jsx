@@ -37,10 +37,11 @@ const AllDailyHighlights = () => {
           <i class="fa-solid fa-right-long"></i>
         </button>
       </div>
+
       <div className={classes.cover} ref={arrowRef}>
         {items.map((item, index) => {
           return (
-            <div className={classes.arrow}>
+            <div className={classes.gaps}>
               <DailyHighlightsList item={item} key={index} />
             </div>
           );
