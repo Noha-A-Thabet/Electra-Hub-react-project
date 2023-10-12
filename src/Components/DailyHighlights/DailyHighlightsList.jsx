@@ -8,6 +8,13 @@ const DailyHighlightsList = (props) => {
       <div className={classes.parent}>
         <div className={classes.child}>
           <img src={image} alt="" />
+          <span className={classes.rating}>
+            <i class="stars fa-solid fa-star"></i>
+            <i class="stars fa-solid fa-star"></i>
+            <i class="stars fa-solid fa-star"></i>
+            <i class="stars fa-solid fa-star"></i>
+            <i class="stars last fa-solid fa-star"></i>
+          </span>
           <h2>{name}</h2>
           <p className={classes.prevPrice}>${prevPrice}</p>
           <p className={classes.price}>${price}</p>

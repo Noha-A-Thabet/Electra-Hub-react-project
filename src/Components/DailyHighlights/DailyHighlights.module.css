@@ -84,13 +84,22 @@
 }
 
 .price {
-    color: black;
+    color: red;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 23px;
 }
 
 .prevPrice {
     color: gray;
     font-weight: bold;
     text-decoration: line-through;
+}
+
+
+.rating {
+    color: red !important
+}
+
+.rating :last-child {
+    color: gray !important
 }
