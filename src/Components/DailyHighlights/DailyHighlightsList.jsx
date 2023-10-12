@@ -7,6 +7,9 @@ const DailyHighlightsList = (props) => {
     <div>
       <div className={classes.parent}>
         <div className={classes.child}>
+          <div className={classes.freeDiv}>
+            <p className={classes.free}>Free Shipping</p>
+          </div>
           <img src={image} alt="" />
           <span className={classes.rating}>
             <i class="stars fa-solid fa-star"></i>
