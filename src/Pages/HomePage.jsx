@@ -9,6 +9,7 @@ import classes from "./Home.module.css";
 import cupons from "../assests/cupon.jpg";
 import wash from "../assests/wash.jpg";
 import Category from "../Components/Category/Category";
+import Mobiles from "../Components/Mobiles/Mobiles";
 import DailyHighlights from "../Components/DailyHighlights/DailyHighlights";
 
 const HomePage = () => {
@@ -98,6 +99,7 @@ const HomePage = () => {
       </div>
       {/* <Category /> */}
       <DailyHighlights />
+      <Mobiles />
     </>
   );
 };

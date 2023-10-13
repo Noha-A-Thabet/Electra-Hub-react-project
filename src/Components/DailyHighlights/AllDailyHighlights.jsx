@@ -9,7 +9,7 @@ const AllDailyHighlights = () => {
   const fetchData = async () => {
     const response = await fetch("http://localhost:4000/Electronics");
     const data = await response.json();
-    setItems(data.slice(0, 20));
+    setItems(data.slice(2, 20));
   };
 
   useEffect(() => {
@@ -29,23 +29,33 @@ const AllDailyHighlights = () => {
   };
   return (
     <>
-      <div className={classes.arrows}>
-        <button className={classes.icon} onClick={rightScrollHnalder}>
-          <i class="fa-solid fa-left-long"></i>
-        </button>
-        <button className={classes.icon} onClick={leftScrollHnalder}>
-          <i class="fa-solid fa-right-long"></i>
-        </button>
-      </div>
+      <div className={classes.DailyParent}>
+        <div className={classes.header}>
+          <div className={classes.heading}>
+            <h1>Deals</h1>
+          </div>
+          {/*start  arrows */}
+          <div className={classes.arrows}>
+            <button className={classes.icon} onClick={leftScrollHnalder}>
+              <i class="fa-solid fa-left-long"></i>
+            </button>
+            <button className={classes.icon} onClick={rightScrollHnalder}>
+              <i class="fa-solid fa-right-long"></i>
+            </button>
+          </div>
+          {/* end arrows  */}
+        </div>
+        {/* End Haeder */}
 
-      <div className={classes.cover} ref={arrowRef}>
-        {items.map((item, index) => {
-          return (
-            <div className={classes.gaps}>
-              <DailyHighlightsList item={item} key={index} />
-            </div>
-          );
-        })}
+        <div className={classes.cover} ref={arrowRef}>
+          {items.map((item, index) => {
+            return (
+              <div className={classes.gaps}>
+                <DailyHighlightsList item={item} key={index} />
+              </div>
+            );
+          })}
+        </div>
       </div>
     </>
   );

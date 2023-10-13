@@ -1,6 +1,20 @@
 .daily {
     padding: 20px;
+}
 
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading {
+    margin: 20px;
+}
+
+.heading h1 {
+    line-break: normal;
 }
 
 .cover {
@@ -12,22 +26,16 @@
 
 }
 
-/* For Webkit-based browsers */
 .cover::-webkit-scrollbar {
     width: 12px;
-    /* Width of the scrollbar */
 }
 
-/* For Webkit-based browsers */
 .cover::-webkit-scrollbar-thumb {
     background-color: transparent;
-    /* Thumb color (dragging handle) */
 }
 
-/* For Webkit-based browsers */
 .cover::-webkit-scrollbar-track {
     background-color: transparent;
-    /* Track color (the area on which the thumb moves) */
 }
 
 .gaps {

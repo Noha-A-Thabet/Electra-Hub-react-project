@@ -156,7 +156,7 @@
       "id": 20,
       "name": "Huawei MatePad Pro",
       "type": "Tablet",
-      "prevPrice": 800,
+      "prevPrice": 900,
       "price": 699.99,
       "image": "https://m.media-amazon.com/images/I/51HxLMWrFML.__AC_SX300_SY300_QL70_ML2_.jpg"
     },
@@ -164,6 +164,7 @@
       "id": 21,
       "name": "LG G8 ThinQ",
       "type": "Mobile",
+      "prevPrice": 900,
       "price": 599.99,
       "image": "https://m.media-amazon.com/images/I/71ZXXayzmcL.__AC_SX300_SY300_QL70_ML2_.jpg"
     },
@@ -171,6 +172,7 @@
       "id": 22,
       "name": "Fitbit Versa 3",
       "type": "Smartwatch",
+      "prevPrice": 400,
       "price": 229.99,
       "image": "https://m.media-amazon.com/images/I/61-gHEarWHL.__AC_SX300_SY300_QL70_ML2_.jpg"
     },
