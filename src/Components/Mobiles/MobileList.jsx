@@ -1,12 +1,11 @@
-import React, { useEffect } from "react";
 import classes from "./Mobiles.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../Redux/cartSlice";
 
 const MobileList = ({ mobile }) => {
   const { name, price, image } = mobile;
+  const cartItems = useSelector((state) => state.cart.cartItems);
 
-  const cartItems = useSelector((state) => state.cart);
   const dispatch = useDispatch();
 
   const addToCartHandler = () => {
