@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.cartImg {
+    height: 100px;
+}
+
+h1 {
+    margin: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+}
+
+.cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+
+    width: 70%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: 4px 4px 9px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+    border: 3px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-size: 18px;
+}
+
+tr {
+
+    border: 3px solid #ddd;
+}
+
+.quantityRw {
+    width: 7%;
+}
+
+.priceRw {
+    width: 10%
+}
+
+.totalPriceRw {
+    width: 20%
+}
+
+.trashRw {
+    width: 10%
+}
+
+.item {
+    width: 30%;
+}
+
+.itemInfo {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: center;
+    border: none;
+}
+
+.itemInfo h3 {
+    font-weight: bold;
+}
+
+.price {
+    font-weight: bold;
+
+}
+
+.totalPrice {
+    font-weight: bold;
+}
+
+td button {
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+td div {
+    font-weight: bold;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}
+
+.cartSummary {
+    border: 2px solid red;
+}
+
+.amount {
+    font-size: 30px;
+}
+
+.checkout {
+    border: 2px solid green
+}
+
+.trash {
+    color: black;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+.trash:hover {
+    background-color: red;
+    cursor: pointer;
+}
+
+.quantity {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border: none;
+}
+
+.quantity button {
+    border: none;
+    outline: none;
+    color: gray;
+    background-color: none;
+    padding: .7rem 1.5rem;
+    cursor: pointer;
+}
+
+.quantityNumber {
+    padding: 13px;
+}

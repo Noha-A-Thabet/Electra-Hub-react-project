@@ -1,77 +1,95 @@
 import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import classes from "./RootLayout.module.css";
+import classes from "./cart.module.css";
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.cartItems);
   const TotalAmount = useSelector((state) => state.cart.cartTotalAmount);
 
   return (
-    <div className={classes.cartParent}>
-      <h2>Shopping Cart</h2>
+    <>
+      <h1>Shopping Cart</h1>
+      <div className={classes.cart}>
+        <table className={classes.cartParent}>
+          {/* map through cart items */}
+          {cartItems.length === 0 ? (
+            <div className={classes.emptyCart}>
+              <p>Your Cart IsCurrently Empty </p>
+              <Link to="/">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Start Shopping</span>
+              </Link>
+            </div>
+          ) : (
+            <>
+              {/* table head */}
+              <thead className={classes.cartArticles}>
+                <tr>
+                  <th className={classes.item}>Item</th>
+                  <th className={classes.priceRw}>Price</th>
+                  <th className={classes.quantityRw}>Quantity</th>
+                  <th className={classes.totalPriceRw}>Total Price</th>
+                  <th className={classes.trashRw}></th>
+                </tr>
+              </thead>
+              {/* table body */}
+              <tbody>
+                {cartItems.map((item, index) => {
+                  const { name, price, image, cartQuantity } = item;
+                  const totalPrice = price * cartQuantity;
 
-      {/* map through cart items */}
-      {cartItems.length === 0 ? (
-        <div className={classes.emptyCart}>
-          <p>Your Cart IsCurrently Empty </p>
-          <Link to="/">
-            <i class="fa-solid fa-arrow-left"></i>
-            <span>Start Shopping</span>
-          </Link>
-        </div>
-      ) : (
-        <div>
-          <div className={classes.titles}>
-            <div className={classes.productTitle}>Product</div>
-            <div className={classes.price}>Price</div>
-            <div className={classes.quantity}>Quantity</div>
-            <div className={classes.total}>Total</div>
-          </div>
-          <div className={classes.cartItems}>
-            {cartItems.map((item, index) => {
-              const { name, price, image, cartQuantity } = item;
+                  return (
+                    <tr key={index}>
+                      <td className={classes.itemInfo}>
+                        <img src={image} className={classes.cartImg} alt="" />
+                        <h3>{name}</h3>
+                      </td>
+                      <td className={classes.price}>${price}</td>
+                      <td>
+                        <div className={classes.quantity}>
+                          <button>-</button>
+                          <div className={classes.quantityNumber}>
+                            {cartQuantity}
+                          </div>
+                          <button>+</button>
+                        </div>
+                      </td>
+                      <td className={classes.totalPrice}>${totalPrice}</td>
+                      <td>
+                        <button className={classes.trash}>
+                          <i class="fa-solid fa-x"></i>
+                        </button>
+                      </td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </>
+          )}
 
-              return (
-                <div key={index}>
-                  <img src={image} className={classes.cartImg} alt="" />
-                  <h3>{name}</h3>
-                  <p>${price}</p>
-                  <p>Quantity</p>
-                  <button>Remove</button>
+          {/* summary */}
+        </table>
+        <div className={classes.cartSummary}>
+          {/* checkout */}
 
-                  <div className={classes.quantity}>
-                    <button>-</button>
-                    <div>{cartQuantity}</div>
-                    <button>+</button>
-                  </div>
-                  <div className={classes.totalPrice}>
-                    ${price * cartQuantity}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      )}
-
-      {/* summary */}
-      <div className={classes.cartSummary}>
-        <button className={classes.clear}>Clear Cart</button>
-
-        {/* checkout */}
-        <div className={classes.checkOut}>
           <div className={classes.subtotal}>
-            <span>Subtotal</span>
-            <span className={classes.amount}>{TotalAmount}</span>
+            <div className={classes.subTotal}>
+              <span>Subtotal</span>
+              <span className={classes.amount}>{TotalAmount}</span>
+            </div>
             <p>Taxes and shipping calculated at checkout</p>
+          </div>
+          <div>
             <button>Check out</button>
-            <Link to="/">
-              <i class="fa-solid fa-arrow-left"></i>
-              <span>Continue Shopping</span>
-            </Link>
+            <button className={classes.checkout}>
+              <Link to="/">
+                <i class="fa-solid fa-arrow-left"></i>
+                <span>Continue Shopping</span>
+              </Link>
+            </button>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 
