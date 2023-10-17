@@ -30,7 +30,6 @@ const MobileList = ({ mobile }) => {
           <button onClick={addToCartHandler}>Add To Cart</button>
         </div>
       </div>
-      {/* //// */}
     </div>
   );
 };
