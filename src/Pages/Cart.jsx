@@ -1,9 +1,12 @@
 import { Link } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
+import { removeItem } from "../Components/Redux/cartSlice";
 import classes from "./cart.module.css";
+
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.cartItems);
   const TotalAmount = useSelector((state) => state.cart.cartTotalAmount);
+  const dispatch = useDispatch();
 
   return (
     <>
@@ -35,8 +38,12 @@ const Cart = () => {
               <tbody>
                 {cartItems.map((item, index) => {
                   const { name, price, image, cartQuantity } = item;
-                  const totalPrice = price * cartQuantity;
 
+                  const totalPrice = price * cartQuantity;
+                  // remove items Handler
+                  const removeItemHandler = () => {
+                    dispatch(removeItem({ id: item.id }));
+                  };
                   return (
                     <tr key={index}>
                       <td className={classes.itemInfo}>
@@ -55,7 +62,10 @@ const Cart = () => {
                       </td>
                       <td className={classes.totalPrice}>${totalPrice}</td>
                       <td>
-                        <button className={classes.trash}>
+                        <button
+                          className={classes.trash}
+                          onClick={removeItemHandler}
+                        >
                           <i class="fa-solid fa-x"></i>
                         </button>
                       </td>
