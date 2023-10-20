@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
-import { removeItem } from "../Components/Redux/cartSlice";
+import {
+  removeItem,
+  decreaseCartItems,
+  addToCart,
+} from "../Components/Redux/cartSlice";
 import classes from "./cart.module.css";
 
 const Cart = () => {
@@ -44,6 +48,12 @@ const Cart = () => {
                   const removeItemHandler = () => {
                     dispatch(removeItem({ id: item.id }));
                   };
+
+                  // decrease cart items
+                  const decreaseItems = () => {
+                    dispatch(decreaseCartItems({ id: item.id }));
+                  };
+
                   return (
                     <tr key={index}>
                       <td className={classes.itemInfo}>
@@ -53,11 +63,18 @@ const Cart = () => {
                       <td className={classes.price}>${price}</td>
                       <td>
                         <div className={classes.quantity}>
-                          <button>-</button>
+                          <button onClick={decreaseItems}>-</button>
                           <div className={classes.quantityNumber}>
                             {cartQuantity}
                           </div>
-                          <button>+</button>
+                          {/* increase cart items */}
+                          <button
+                            onClick={() => {
+                              dispatch(addToCart(item));
+                            }}
+                          >
+                            +
+                          </button>
                         </div>
                       </td>
                       <td className={classes.totalPrice}>${totalPrice}</td>
