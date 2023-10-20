@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
-import classes from "./Laptop.module.css";
-import LaptopList from "./LaptopList";
+import classes from "./SmartWatch.module.css";
+import SmartWatchList from "./SmartWatchList";
 
-const Laptop = () => {
-  const [Laptops, setLaptops] = useState([]);
+const SmartWatch = () => {
+  const [watches, setWatches] = useState([]);
   const arrowRef = useRef(null);
 
   //   fetch data
@@ -11,8 +11,8 @@ const Laptop = () => {
     const url = "http://localhost:4000/Electronics";
     const response = await fetch(url);
     const data = await response.json();
-    const LaptopType = data.filter((laptop) => laptop.type === "Laptop");
-    setLaptops(LaptopType);
+    const watchType = data.filter((watch) => watch.type === "Smartwatch");
+    setWatches(watchType);
   };
 
   useEffect(() => {
@@ -37,7 +37,7 @@ const Laptop = () => {
     <div className={classes.mobileParent}>
       <div className={classes.header}>
         <div className={classes.heading}>
-          <h1>Laptops</h1>
+          <h1>Watches</h1>
         </div>
         {/*start  arrows */}
         <div className={classes.arrows}>
@@ -53,10 +53,10 @@ const Laptop = () => {
       {/* End Haeder */}
 
       <div className={classes.cover} ref={arrowRef}>
-        {Laptops.map((laptop, index) => {
+        {watches.map((watch, index) => {
           return (
             <div className={classes.gaps}>
-              <LaptopList key={index} laptop={laptop} />
+              <SmartWatchList key={index} watch={watch} />
             </div>
           );
         })}
@@ -65,4 +65,4 @@ const Laptop = () => {
   );
 };
 
-export default Laptop;
+export default SmartWatch;

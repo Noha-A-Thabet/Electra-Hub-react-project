@@ -8,10 +8,11 @@ import MetaNews from "../assests/MMSA_TSR_mob_new (1).jpg";
 import classes from "./Home.module.css";
 import cupons from "../assests/cupon.jpg";
 import wash from "../assests/wash.jpg";
-import Category from "../Components/Category/Category";
 import Mobiles from "../Components/Mobiles/Mobiles";
 import DailyHighlights from "../Components/DailyHighlights/DailyHighlights";
 import Laptop from "../Components/Laptop/Laptop";
+import SmartWatch from "../Components/SmartWatch/SmartWatch";
+
 const HomePage = () => {
   const wrapperRef = useRef(null);
 
@@ -54,7 +55,7 @@ const HomePage = () => {
       window.removeEventListener("mouseup", handleMouseUp);
       wrapper.removeEventListener("mousemove", handleMouseMove);
     };
-  }, []); // Empty dependency array means this effect runs once after the first render
+  }, []);
 
   return (
     <>
@@ -101,6 +102,7 @@ const HomePage = () => {
       <DailyHighlights />
       <Mobiles />
       <Laptop />
+      <SmartWatch />
     </>
   );
 };
