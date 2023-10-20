@@ -1,0 +1,109 @@
+.mobileParent {
+    padding: 20px
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.heading {
+    margin: 20px;
+
+}
+
+.arrows {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px;
+}
+
+
+.icon {
+    color: white;
+    background-color: black;
+    font-size: 25px;
+    padding: 15px;
+    outline: none;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.cover {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow-x: auto;
+    transition: .1s;
+
+}
+
+
+.cover::-webkit-scrollbar {
+    width: 12px;
+
+}
+
+.cover::-webkit-scrollbar-thumb {
+    background-color: transparent;
+}
+
+.cover::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+
+.gaps {
+    margin: 0 10px;
+}
+
+.parent {
+    border: 2px solid lightgray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 500px;
+    padding: 20px;
+    width: 100%;
+    overflow: auto;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+
+.child {
+    min-width: 300px;
+    height: 450px;
+    margin: 1 10px;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.child img {
+    height: 200px;
+}
+
+
+.price {
+    color: red;
+    font-weight: bold;
+    font-size: 23px;
+}
+
+
+.rating {
+    color: red !important
+}
+
+.rating :last-child {
+    color: gray !important
+}

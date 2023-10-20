@@ -12,6 +12,7 @@ import Mobiles from "../Components/Mobiles/Mobiles";
 import DailyHighlights from "../Components/DailyHighlights/DailyHighlights";
 import Laptop from "../Components/Laptop/Laptop";
 import SmartWatch from "../Components/SmartWatch/SmartWatch";
+import Tablet from "../Components/Tablet/Tablet";
 
 const HomePage = () => {
   const wrapperRef = useRef(null);
@@ -103,6 +104,7 @@ const HomePage = () => {
       <Mobiles />
       <Laptop />
       <SmartWatch />
+      <Tablet />
     </>
   );
 };

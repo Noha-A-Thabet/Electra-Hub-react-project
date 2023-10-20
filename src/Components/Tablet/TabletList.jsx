@@ -1,15 +1,15 @@
-import classes from "./Laptop.module.css";
+import classes from "./Tablet.module.css";
 import { useDispatch, useSelector } from "react-redux";
 import { addToCart } from "../Redux/cartSlice";
 
-const LaptopList = ({ laptop }) => {
-  const { name, price, image } = laptop;
+const TabletList = ({ tablet }) => {
+  const { name, price, image } = tablet;
   const cartItems = useSelector((state) => state.cart.cartItems);
 
   const dispatch = useDispatch();
 
   const addToCartHandler = () => {
-    dispatch(addToCart(laptop));
+    dispatch(addToCart(tablet));
   };
 
   return (
@@ -34,4 +34,4 @@ const LaptopList = ({ laptop }) => {
   );
 };
 
-export default LaptopList;
+export default TabletList;
