@@ -11,7 +11,7 @@ import wash from "../assests/wash.jpg";
 import Category from "../Components/Category/Category";
 import Mobiles from "../Components/Mobiles/Mobiles";
 import DailyHighlights from "../Components/DailyHighlights/DailyHighlights";
-
+import Laptop from "../Components/Laptop/Laptop";
 const HomePage = () => {
   const wrapperRef = useRef(null);
 
@@ -100,6 +100,7 @@ const HomePage = () => {
       {/* <Category /> */}
       <DailyHighlights />
       <Mobiles />
+      <Laptop />
     </>
   );
 };
