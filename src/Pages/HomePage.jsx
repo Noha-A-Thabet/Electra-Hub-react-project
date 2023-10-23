@@ -14,6 +14,7 @@ import Laptop from "../Components/Laptop/Laptop";
 import SmartWatch from "../Components/SmartWatch/SmartWatch";
 import Tablet from "../Components/Tablet/Tablet";
 import AllBrands from "../Components/Brands/AllBrands";
+import Footer from "../Components/Footer/Footer";
 
 const HomePage = () => {
   const wrapperRef = useRef(null);
@@ -107,6 +108,7 @@ const HomePage = () => {
       <Laptop />
       <SmartWatch />
       <Tablet />
+      <Footer />
     </>
   );
 };

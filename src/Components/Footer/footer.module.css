@@ -1,0 +1,28 @@
+footer {
+    border: 2px solid salmon;
+    display: grid;
+    height: 60vh;
+    grid-template-columns: auto auto auto auto;
+    padding: 20px;
+}
+
+.contact {
+    border: 2px solid green;
+    padding: 10px;
+
+}
+
+.service {
+    border: 2px solid green;
+    padding: 10px;
+}
+
+.about {
+    border: 2px solid green;
+    padding: 10px;
+}
+
+.category {
+    border: 2px solid green;
+    padding: 10px;
+}
