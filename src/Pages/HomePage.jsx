@@ -102,11 +102,11 @@ const HomePage = () => {
       </div>
 
       <DailyHighlights />
+      <AllBrands />
       <Mobiles />
       <Laptop />
       <SmartWatch />
       <Tablet />
-      <AllBrands />
     </>
   );
 };
