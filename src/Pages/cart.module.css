@@ -105,15 +105,80 @@ tr:hover {
 }
 
 .cartSummary {
-    border: 2px solid red;
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: 25% !important;
+    text-align: right;
+    position: relative;
+    transform: translateX(300px);
 }
 
-.amount {
-    font-size: 30px;
+.total {
+    height: 100px;
+    width: 100%;
+}
+
+.subTotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subTotal p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.taxes {
+    font-size: 18px;
+    margin: 8px;
+    color: gray;
+    font-weight: bold;
+}
+
+.checkoutDiv {
+    height: 100px;
+    width: 100%;
 }
 
 .checkout {
-    border: 2px solid green
+    background-color: transparent !important;
+    border: none;
+    outline: none;
+    margin-top: 15px;
+}
+
+.checkout i {
+    font-size: 18px;
+    color: gray
+}
+
+.continue {
+    color: gray !important;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.checkoutDiv {
+    display: flex;
+    flex-direction: column;
+    height: 200px;
+}
+
+.btnCheckout {
+    height: 50px;
+    background-color: #0069d9;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+}
+
+.btnCheckout:hover {
+    cursor: pointer;
 }
 
 .trash {
@@ -144,4 +209,25 @@ tr:hover {
 
 .quantityNumber {
     padding: 13px;
+}
+
+.emptyCart {
+    padding: 20px;
+}
+
+.emptyPara {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.emptyLink {
+    font-weight: bold;
+    color: gray;
+    margin-top: 10px !important;
+    display: inline-block;
+    /* padding: 10px; */
+}
+
+.startShopping {
+    padding: 10px;
 }

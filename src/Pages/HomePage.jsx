@@ -13,6 +13,7 @@ import DailyHighlights from "../Components/DailyHighlights/DailyHighlights";
 import Laptop from "../Components/Laptop/Laptop";
 import SmartWatch from "../Components/SmartWatch/SmartWatch";
 import Tablet from "../Components/Tablet/Tablet";
+import AllBrands from "../Components/Brands/AllBrands";
 
 const HomePage = () => {
   const wrapperRef = useRef(null);
@@ -99,12 +100,13 @@ const HomePage = () => {
           newsPara="All-round service: delivery, assembly/installation, connection &amp; function check from 19.-"
         />
       </div>
-      {/* <Category /> */}
+
       <DailyHighlights />
       <Mobiles />
       <Laptop />
       <SmartWatch />
       <Tablet />
+      <AllBrands />
     </>
   );
 };

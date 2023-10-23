@@ -9,8 +9,14 @@ import classes from "./cart.module.css";
 
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.cartItems);
-  const TotalAmount = useSelector((state) => state.cart.cartTotalAmount);
+
   const dispatch = useDispatch();
+
+  // calculate total price
+  const subTotal = cartItems.reduce((accumulator, item) => {
+    const { price, cartQuantity } = item;
+    return accumulator + price * cartQuantity;
+  }, 0);
 
   return (
     <>
@@ -20,10 +26,10 @@ const Cart = () => {
           {/* map through cart items */}
           {cartItems.length === 0 ? (
             <div className={classes.emptyCart}>
-              <p>Your Cart IsCurrently Empty </p>
-              <Link to="/">
+              <p className={classes.emptyPara}>Your Cart Is Currently Empty </p>
+              <Link to="/" className={classes.emptyLink}>
                 <i class="fa-solid fa-arrow-left"></i>
-                <span>Start Shopping</span>
+                <span className={classes.startShopping}>Start Shopping</span>
               </Link>
             </div>
           ) : (
@@ -39,11 +45,15 @@ const Cart = () => {
                 </tr>
               </thead>
               {/* table body */}
+
               <tbody>
                 {cartItems.map((item, index) => {
                   const { name, price, image, cartQuantity } = item;
+                  // calculate price
+                  const Price = price * cartQuantity;
 
-                  const totalPrice = price * cartQuantity;
+                  // .........
+
                   // remove items Handler
                   const removeItemHandler = () => {
                     dispatch(removeItem({ id: item.id }));
@@ -77,7 +87,9 @@ const Cart = () => {
                           </button>
                         </div>
                       </td>
-                      <td className={classes.totalPrice}>${totalPrice}</td>
+                      <td className={classes.totalPrice}>
+                        ${Price.toFixed(2)}
+                      </td>
                       <td>
                         <button
                           className={classes.trash}
@@ -92,28 +104,32 @@ const Cart = () => {
               </tbody>
             </>
           )}
-
-          {/* summary */}
         </table>
         <div className={classes.cartSummary}>
-          {/* checkout */}
-
-          <div className={classes.subtotal}>
+          {/* summary */}
+          <div className={classes.total}>
             <div className={classes.subTotal}>
-              <span>Subtotal</span>
-              <span className={classes.amount}>{TotalAmount}</span>
+              <div>
+                <p>Subtotal : </p>
+              </div>
+              <div>
+                <p className={classes.amount}>${subTotal.toFixed(2)}</p>
+              </div>
             </div>
-            <p>Taxes and shipping calculated at checkout</p>
+            <p className={classes.taxes}>
+              Taxes and shipping calculated at checkout
+            </p>
           </div>
-          <div>
-            <button>Check out</button>
+          <div className={classes.checkoutDiv}>
+            <button className={classes.btnCheckout}>Check out</button>
             <button className={classes.checkout}>
               <Link to="/">
-                <i class="fa-solid fa-arrow-left"></i>
-                <span>Continue Shopping</span>
+                <i class="fa-solid fa-arrow-left arrow"></i>
+                <span className={classes.continue}>Continue Shopping</span>
               </Link>
             </button>
           </div>
+          {/* checkout */}
         </div>
       </div>
     </>
