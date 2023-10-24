@@ -1,5 +1,6 @@
 import React from "react";
 import classes from "./footer.module.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -8,31 +9,44 @@ const Footer = () => {
         <div className={classes.contact}>
           <h2> Contact</h2>
           <ul>
-            <li>
+            <li className={classes.icon}>
               <i class="fa-solid fa-message"></i>
               <span>questions and answers </span>
+              <br />
               <span className={classes.findIt}>you can find it here</span>
             </li>
-            <li>
+            <li className={classes.icon}>
               <i class="fa-solid fa-file-lines"></i>
               <span>write us </span>
+              <br />
               <span className={classes.findIt}>contact form</span>
             </li>
           </ul>
-          <ul>
-            <li>
-              <i class="fa-brands fa-facebook"></i>
+          <ul className={classes.socialIcons}>
+            <li className={classes.icon}>
+              <Link
+                to="http://www.facebook.com"
+                className={classes.facebooklink}
+              >
+                <i class="fa-brands fa-facebook"></i>
+              </Link>
             </li>
 
-            <li>
-              <i class="fa-brands fa-twitter"></i>
+            <li className={classes.icon}>
+              <Link to="http://www.twitter.com" className={classes.twitterlink}>
+                <i class="fa-brands fa-twitter"></i>
+              </Link>
             </li>
-            <li>
-              <i class="fa-brands fa-youtube"></i>
+            <li className={classes.icon}>
+              <Link to="http://www.youtube.com" className={classes.youtubelink}>
+                <i class="fa-brands fa-youtube you"></i>
+              </Link>
             </li>
 
-            <li>
-              <i class="fa-brands fa-instagram"></i>
+            <li className={classes.icon}>
+              <Link to="http://www.instagram.com" className={classes.instalink}>
+                <i class="fa-brands fa-instagram"></i>
+              </Link>
             </li>
           </ul>
         </div>
@@ -59,27 +73,38 @@ const Footer = () => {
           <ul>
             <li>Pursue</li>
             <li>Jobs & Careers</li>
-
             <li> Our markets</li>
             <li>our brands</li>
             <li>Press</li>
             <li>sustainability</li>
             <li>Vulnerability Disclosure Program</li>
-            <li>
-              Complaints procedure for human rights and environmental protection
-            </li>
             <li>Electra partner</li>
           </ul>
         </div>
 
         <div className={classes.category}>
           <h2>Top Categories</h2>
-
           <ul>
-            <li>Mobiles</li>
-            <li>Laptops</li>
-            <li>Tablets</li>
-            <li>Watches</li>
+            <li>
+              <Link to="mobiles" className={classes.links}>
+                Mobiles
+              </Link>
+            </li>
+            <li>
+              <Link to="laptops" className={classes.links}>
+                Laptops
+              </Link>
+            </li>
+            <li>
+              <Link to="tablets" className={classes.links}>
+                Tablets
+              </Link>
+            </li>
+            <li>
+              <Link to="watches" className={classes.links}>
+                Watches
+              </Link>
+            </li>
           </ul>
         </div>
       </footer>

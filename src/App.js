@@ -4,6 +4,10 @@ import HomePage from './Pages/HomePage'
 import SignIn from "./Pages/SignIn";
 import WhishList from './Pages/WhishList';
 import Cart from './Pages/Cart'
+import Mobiles from "./Components/Mobiles/Mobiles";
+import Laptop from "./Components/Laptop/Laptop";
+import Tablet from "./Components/Tablet/Tablet";
+import SmartWatch from "./Components/SmartWatch/SmartWatch";
 
 function App() {
   const router = createBrowserRouter(createRoutesFromElements(
@@ -12,6 +16,10 @@ function App() {
       <Route path="signIn" element={<SignIn />} />
       <Route path="whishList" element={<WhishList />} />
       <Route path="cart" element={<Cart />} />
+      <Route path="mobiles" element={<Mobiles />} />
+      <Route path="laptops" element={<Laptop />} />
+      <Route path="tablets" element={<Tablet />} />
+      <Route path="watches" element={<SmartWatch />} />
     </Route>
   ))
   return (

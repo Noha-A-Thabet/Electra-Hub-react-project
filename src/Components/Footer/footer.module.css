@@ -1,28 +1,80 @@
 footer {
-    border: 2px solid salmon;
+    background-color: #e3e3e3;
     display: grid;
-    height: 60vh;
+    height: 70vh;
     grid-template-columns: auto auto auto auto;
     padding: 20px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    text-align: left
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+}
+
+footer ul li {
+    list-style-type: none;
+    padding: .8rem;
+    display: block;
+    font-size: 17px;
+}
+
+footer ul li:hover {
+    cursor: pointer;
+    color: #404553ba;
+}
+
+.socialIcons {
+    display: flex;
+}
+
+.icon {
+    font-size: 18px !important;
+}
+
+.icon span {
+    margin: 8px;
+}
+
+.findIt {
+    padding-left: 16px;
+    text-decoration: underline;
 }
 
 .contact {
-    border: 2px solid green;
     padding: 10px;
 
 }
 
 .service {
-    border: 2px solid green;
     padding: 10px;
 }
 
 .about {
-    border: 2px solid green;
     padding: 10px;
 }
 
 .category {
-    border: 2px solid green;
     padding: 10px;
+}
+
+.links {
+    color: black !important
+}
+
+.facebooklink {
+    color: #1877F2
+}
+
+.twitterlink {
+    color: #1DA1F2
+}
+
+.youtubelink {
+    color: #FF0000
+}
+
+.instalink {
+    color: #bc2a8d
 }
