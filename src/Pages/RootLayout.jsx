@@ -35,7 +35,7 @@ const RootLayout = () => {
               <ul>
                 <li>
                   <Link to="signIn" className={classes.links}>
-                    Sign in <i class="fa-regular fa-user "></i>
+                    Login <i class="fa-regular fa-user "></i>
                   </Link>
                 </li>
                 <li>
