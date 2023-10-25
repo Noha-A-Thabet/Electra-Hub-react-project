@@ -16,6 +16,13 @@
     border-radius: 3px;
 }
 
+.logout__button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.308);
+    border: none;
+    outline: none;
+}
+
 .user__name {
     color: #8d0ada
 }

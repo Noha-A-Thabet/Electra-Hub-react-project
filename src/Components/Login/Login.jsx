@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import classes from "./Login.module.css";
+import { useDispatch } from "react-redux";
+import { login } from "../Redux/userSlice";
 
 const Login = () => {
   const [name, setName] = useState("");
   const [email, setemail] = useState("");
   const [password, setPassword] = useState("");
+
+  const dispatch = useDispatch();
 
   const changeNameHandler = (e) => {
     setName(e.target.value);
@@ -16,9 +20,23 @@ const Login = () => {
     setPassword(e.target.value);
   };
 
+  const submitFormHandler = (e) => {
+    e.preventDefault();
+    dispatch(
+      login({
+        name,
+        email,
+        password,
+        logdedIn: true,
+      })
+    );
+  };
+
+  const loginHandler = () => {};
+
   return (
     <div className={classes.login}>
-      <form className={classes.login__form}>
+      <form className={classes.login__form} onSubmit={submitFormHandler}>
         <h1>Login Here</h1>
         <input
           type="text"
@@ -38,7 +56,7 @@ const Login = () => {
           value={password}
           onChange={changePassHandler}
         />
-        <button type="submit" className={classes.btn}>
+        <button type="submit" className={classes.btn} onClick={loginHandler}>
           Submit
         </button>
       </form>
