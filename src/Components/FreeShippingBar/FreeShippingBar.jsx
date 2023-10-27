@@ -6,7 +6,7 @@ const FreeShippingBar = () => {
     <nav className={classes.shippingBar}>
       <ul>
         <li>Exclusive app benefits</li>
-        <li>Free shipping for orders over €59*</li>
+        <li>Free shipping over €59*</li>
         <li>collect points</li>
       </ul>
     </nav>

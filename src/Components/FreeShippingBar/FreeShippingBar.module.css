@@ -25,6 +25,8 @@
     cursor: pointer;
 }
 
+/* ///////// Media Queries///////// */
+
 
 @media(max-width:600px) {
     .shippingBar {
@@ -37,22 +39,11 @@
     }
 }
 
-/* ///////// Media Queries///////// */
-@media(min-width:600px) {
-    .shippingBar {
-        height: 7vh;
-    }
-
-    .shippingBar ul li {
-        font-size: 15px !important;
-        font-weight: 400;
-    }
-}
-
 /* ////////////////////////////////////////////////// */
+
 @media(min-width:600px) {
     .shippingBar {
-        height: 6vh;
+        height: 7vh !important;
     }
 
     .shippingBar ul li {
@@ -63,6 +54,7 @@
 }
 
 /* ////////////////////////////////////////////////// */
+
 @media(min-width:768px) {
     .shippingBar {
         height: 5vh;

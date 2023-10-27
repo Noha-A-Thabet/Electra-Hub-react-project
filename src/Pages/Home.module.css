@@ -33,21 +33,21 @@
 /* ///////////////////////////////////////// */
 @media(min-width:600px) {
     .wrapper {
-        grid-auto-columns: 25%;
+        grid-auto-columns: 40%;
     }
 }
 
 /* ///////////////////////////////////////// */
 @media(min-width:768px) {
     .wrapper {
-        grid-auto-columns: 38%;
+        grid-auto-columns: 40%;
     }
 }
 
 /* ///////////////////////////////////////// */
 @media(min-width:992px) {
     .wrapper {
-        grid-auto-columns: 35%;
+        grid-auto-columns: 40%;
     }
 }
 
@@ -55,6 +55,6 @@
 @media(min-width:1200px) {
     .wrapper {
 
-        grid-auto-columns: 27%;
+        grid-auto-columns: 30%;
     }
 }
