@@ -83,8 +83,6 @@
 /* //////////////media queries ///////////////////// */
 
 @media (max-width:600px) {
-
-
     .toggle-button {
         display: block;
         cursor: pointer;

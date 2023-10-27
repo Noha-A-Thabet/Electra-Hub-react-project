@@ -6,7 +6,6 @@ const RootLayout = () => {
   const [openMenu, setOpenMenu] = useState(true);
 
   const showNavbar = () => {
-    console.log("bars");
     setOpenMenu((prev) => !prev);
   };
 
@@ -18,13 +17,6 @@ const RootLayout = () => {
             <Link to="/">Electra Hub </Link>
           </label>
           <div className={classes.search}>
-            <input
-              type="search"
-              className={classes.searchInput}
-              placeholder={`\u{f002} What are you looking for?`}
-              style={{ fontFamily: "FontAwesome" }}
-            />
-
             <label className={classes["toggle-button"]}>
               <li className="fa fa-bars fa-xl" onClick={showNavbar}></li>
             </label>

@@ -1,7 +1,9 @@
 .shippingBar {
-    height: 5vh;
+    height: 6vh !important;
     background-color: black;
     color: white;
+    font-size: 15px;
+    font-family: 'Montserrat Alternates', sans-serif;
 }
 
 .shippingBar ul {
@@ -15,7 +17,7 @@
 
 .shippingBar ul li {
     padding: 1rem;
-    font-weight: 500;
+    font-weight: 500 !important;
 }
 
 .shippingBar ul li:hover {
@@ -38,11 +40,11 @@
 /* ///////// Media Queries///////// */
 @media(min-width:600px) {
     .shippingBar {
-        height: 5vh;
+        height: 7vh;
     }
 
     .shippingBar ul li {
-        font-size: 13px;
+        font-size: 15px !important;
         font-weight: 400;
     }
 }
