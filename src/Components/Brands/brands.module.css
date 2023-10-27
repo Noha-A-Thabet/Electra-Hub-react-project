@@ -22,3 +22,126 @@
 .imgDiv img {
     height: 100%
 }
+
+
+/* ///////// Media Queries///////// */
+
+
+@media(max-width:600px) {
+    .Parent {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 400px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* ////////////////////////////////////////////////// */
+
+@media(min-width:600px) {
+    .Parent {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        height: 400px;
+        margin-bottom: 10px;
+    }
+
+    .imgDiv {
+        width: 180px;
+    }
+
+    .imgDiv img {
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+/* ////////////////////////////////////////////////// */
+
+@media(min-width:768px) {
+
+    .Parent {
+        width: 100%;
+        display: grid !important;
+        grid-template-columns: auto auto auto !important;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+
+    .imgDiv {
+        padding: 15px;
+        border: 2px solid lightgray;
+        border-radius: 15px;
+        height: 100px;
+        width: 160px !important;
+
+    }
+
+    .imgDiv img {
+        width: 100%;
+        object-fit: contain !important;
+    }
+}
+
+/* ////////////////////////////////////////////////// */
+@media(min-width:992px) {
+    .Parent {
+        width: 100%;
+        display: grid !important;
+        grid-template-columns: auto auto auto auto auto auto !important;
+        height: 130px;
+        padding: 10px;
+    }
+
+    .mainDiv {
+        text-align: center;
+        padding: 5px;
+    }
+
+    .imgDiv {
+        padding: 15px;
+        border: 2px solid lightgray;
+        border-radius: 15px;
+        height: 100px;
+        width: 180px;
+    }
+
+    .imgDiv img {
+        width: 100%;
+        object-fit: contain !important;
+    }
+}
+
+/* ////////////////////////////////////////////////// */
+@media(min-width:1200px) {
+    .Parent {
+        width: 100%;
+        display: grid !important;
+        grid-template-columns: auto auto auto auto auto auto !important;
+        height: 130px;
+        padding: 10px;
+    }
+
+    .mainDiv {
+        text-align: center;
+        padding: 5px;
+    }
+
+    .imgDiv {
+        padding: 15px;
+        border: 2px solid lightgray;
+        border-radius: 15px;
+        height: 100px;
+        width: 180px;
+    }
+
+    .imgDiv img {
+        width: 100%;
+        object-fit: contain !important;
+    }
+}

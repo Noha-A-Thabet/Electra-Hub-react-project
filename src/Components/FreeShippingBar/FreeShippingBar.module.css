@@ -33,6 +33,11 @@
         height: 5vh;
     }
 
+    .shippingBar ul {
+        display: flex;
+        align-items: center !important;
+    }
+
     .shippingBar ul li {
         font-size: 13px;
         font-weight: 400;
@@ -44,6 +49,11 @@
 @media(min-width:600px) {
     .shippingBar {
         height: 7vh !important;
+    }
+
+    .shippingBar ul {
+        display: flex;
+        align-items: center !important;
     }
 
     .shippingBar ul li {
@@ -60,6 +70,11 @@
         height: 5vh;
     }
 
+    .shippingBar ul {
+        display: flex;
+        align-items: center !important;
+    }
+
     .shippingBar ul li {
         font-size: 15px !important;
         font-weight: 400;
@@ -73,8 +88,13 @@
         height: 5vh;
     }
 
+    .shippingBar ul {
+        display: flex;
+        align-items: center !important;
+    }
+
     .shippingBar ul li {
-        font-size: 17px !important;
+        font-size: 20px !important;
         font-weight: 400;
         padding: 1rem;
     }

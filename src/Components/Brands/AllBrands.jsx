@@ -41,18 +41,17 @@ const AllBrands = () => {
       name: "MI",
       img: miImg,
     },
-    {
-      id: 7,
-      name: "MICROSOFT",
-      img: microsoftImg,
-    },
+    // {
+    //   id: 7,
+    //   name: "MICROSOFT",
+    //   img: microsoftImg,
+    // },
   ];
 
   return (
     <div className={classes.Parent}>
       {allBrands.map((brand, index) => {
         const { img } = brand;
-
         return (
           <div key={index}>
             <BrandList img={img} />

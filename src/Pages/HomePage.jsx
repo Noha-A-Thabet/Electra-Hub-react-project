@@ -102,8 +102,8 @@ const HomePage = () => {
         />
       </div>
 
-      <DailyHighlights />
       <AllBrands />
+      <DailyHighlights />
       <Mobiles />
       <Laptop />
       <SmartWatch />
