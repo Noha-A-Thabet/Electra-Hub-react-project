@@ -143,8 +143,9 @@
     border: none;
     outline: none;
     color: white;
-    width: 200px;
-    height: 50px;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
     font-size: 15px;
     letter-spacing: .8px;
 }
