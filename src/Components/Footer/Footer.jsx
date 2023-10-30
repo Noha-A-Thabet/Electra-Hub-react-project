@@ -10,13 +10,11 @@ const Footer = () => {
           <h2> Contact</h2>
           <ul>
             <li className={classes.icon}>
-              <i class="fa-solid fa-message"></i>
               <span>questions and answers </span>
               <br />
               <span className={classes.findIt}>you can find it here</span>
             </li>
             <li className={classes.icon}>
-              <i class="fa-solid fa-file-lines"></i>
               <span>write us </span>
               <br />
               <span className={classes.findIt}>contact form</span>

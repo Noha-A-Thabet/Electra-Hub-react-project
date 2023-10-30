@@ -38,7 +38,6 @@ footer ul li:hover {
 }
 
 .findIt {
-    padding-left: 16px;
     text-decoration: underline;
 }
 
@@ -77,4 +76,49 @@ footer ul li:hover {
 
 .instalink {
     color: #bc2a8d
+}
+
+/* Media Queries */
+@media (max-width:600px) {
+    footer {
+        display: grid;
+        grid-template-columns: auto auto;
+        height: fit-content
+    }
+}
+
+/* ///////////////////////// */
+@media (min-width:600px) {
+    footer {
+        display: grid;
+        grid-template-columns: auto auto;
+        height: fit-content
+    }
+}
+
+/* ///////////////////////// */
+@media (min-width:768px) {
+    footer {
+        display: grid;
+        grid-template-columns: auto auto;
+        height: fit-content
+    }
+}
+
+/* ///////////////////////// */
+@media (min-width:992px) {
+    footer {
+        display: grid;
+        grid-template-columns: auto auto;
+        height: fit-content
+    }
+}
+
+/* ///////////////////////// */
+@media (min-width:1200px) {
+    footer {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        height: fit-content
+    }
 }

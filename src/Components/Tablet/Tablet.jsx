@@ -42,10 +42,10 @@ const Tablet = () => {
         {/*start  arrows */}
         <div className={classes.arrows}>
           <button className={classes.icon} onClick={leftScrollHnalder}>
-            <i class="fa-solid fa-left-long"></i>
+            <i class="fa-solid fa-chevron-left"></i>
           </button>
           <button className={classes.icon} onClick={rightScrollHnalder}>
-            <i class="fa-solid fa-right-long"></i>
+            <i class="fa-solid fa-chevron-right"></i>
           </button>
         </div>
         {/* end arrows  */}

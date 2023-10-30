@@ -14,24 +14,33 @@
 
 }
 
-.arrows {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 20px;
-}
-
-
 .icon {
     color: white;
-    background-color: black;
-    font-size: 25px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    outline: none;
+    font-size: 10px !important;
     padding: 15px;
     outline: none;
+    height: 30px;
+    width: 32px;
+    margin: 2px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .icon:hover {
     cursor: pointer;
+}
+
+.arrows {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px;
 }
 
 .cover {
@@ -92,6 +101,28 @@
     height: 200px;
 }
 
+.whishListDiv {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+
+.whistListIcon {
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.whistListIcon i {
+    color: red !important;
+    font-size: 20px;
+}
+
+.whistListIcon i:hover {
+    cursor: pointer;
+}
+
 
 .price {
     color: red;
@@ -106,4 +137,49 @@
 
 .rating :last-child {
     color: gray !important
+}
+
+.addBtn {
+    background-color: #a51716 !important;
+    border: none;
+    outline: none;
+    color: white;
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    font-size: 15px;
+    letter-spacing: .8px;
+}
+
+.addBtn:hover {
+    cursor: pointer;
+    background-color: red !important;
+}
+
+/* Media Queries */
+@media (max-width:600px) {
+    .child {
+        min-width: 270px;
+    }
+}
+
+/* ///////////////////////// */
+@media (min-width:600px) {
+    .child {
+        min-width: 280px;
+    }
+}
+
+/* ///////////////////////// */
+@media (min-width:768px) {
+    .child {
+        min-width: 290px;
+    }
+}
+
+/* ///////////////////////// */
+@media (min-width:1200px) {
+    .child {
+        min-width: 300px;
+    }
 }
