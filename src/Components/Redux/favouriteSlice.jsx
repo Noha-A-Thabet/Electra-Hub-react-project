@@ -25,8 +25,18 @@ export const favouriteSlice = createSlice({
       // set items to local storage
       localStorage.setItem("listItems", JSON.stringify(state.listItems));
     },
+
+    // remove items
+    removeFromFav(state, action) {
+      const nextItem = state.listItems.filter(
+        (item) => item.id !== action.payload.id
+      );
+      state.listItems = nextItem;
+      // set New items to local storage
+      localStorage.setItem("listItems", JSON.stringify(state.listItems));
+    },
   },
 });
 
-export const { addToFav } = favouriteSlice.actions;
+export const { addToFav, removeFromFav } = favouriteSlice.actions;
 export default favouriteSlice.reducer;
