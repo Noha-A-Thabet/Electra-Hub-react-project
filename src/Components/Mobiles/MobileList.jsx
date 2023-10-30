@@ -20,9 +20,14 @@ const MobileList = ({ mobile }) => {
     <div>
       <div className={classes.parent}>
         <div className={classes.child}>
-          <button onClick={whishListHandler}>
-            <i class="fa-solid fa-heart"></i>
-          </button>
+          <div className={classes.whishListDiv}>
+            <button
+              onClick={whishListHandler}
+              className={classes.whistListIcon}
+            >
+              <i class="fa-solid fa-heart"></i>
+            </button>
+          </div>
           <img src={image} alt="" />
           <span className={classes.rating}>
             <i class="stars fa-solid fa-star"></i>
@@ -34,7 +39,9 @@ const MobileList = ({ mobile }) => {
           <h2>{name}</h2>
 
           <p className={classes.price}>${price}</p>
-          <button onClick={addToCartHandler}>Add To Cart</button>
+          <button onClick={addToCartHandler} className={classes.addBtn}>
+            Add To Cart
+          </button>
         </div>
       </div>
     </div>

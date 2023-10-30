@@ -17,7 +17,7 @@ const Tablet = () => {
 
   useEffect(() => {
     fetchData();
-  });
+  }, []);
 
   // arrows Functions for right & left
   const rightScrollHnalder = () => {
