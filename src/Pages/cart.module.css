@@ -105,7 +105,6 @@ tr:hover {
 }
 
 .cartSummary {
-    /* border: 2px solid red; */
     display: flex;
     flex-direction: column;
     height: 250px;
@@ -225,9 +224,440 @@ tr:hover {
     color: gray;
     margin-top: 10px !important;
     display: inline-block;
-    /* padding: 10px; */
 }
 
 .startShopping {
     padding: 10px;
+}
+
+
+/* Media Queries */
+@media (max-width:600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    .cart {}
+
+    table {
+        width: 470px !important;
+    }
+
+    .item {
+        width: 200px !important;
+    }
+
+    .itemInfo {
+        display: grid;
+        grid-template-columns: auto auto auto auto !important;
+        align-items: center;
+        border: none;
+    }
+
+    .itemInfo h3 {
+        font-weight: bold;
+        font-size: 14px;
+    }
+
+    .cartImg {
+        height: 70px;
+        margin: 10px;
+    }
+
+    .quantityTd {
+        border: 2px solid green;
+        width: 100px !important;
+    }
+
+    .quantity {
+        width: 100px !important;
+    }
+
+    .quantity button {
+        padding: .1rem .1rem;
+
+    }
+
+    .trash {
+        color: black;
+        background-color: transparent;
+        font-size: 10px;
+    }
+
+    .cartSummary {
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+        text-align: right;
+        position: relative;
+        transform: translateX(50px);
+    }
+
+    .total {
+        width: 250px !important;
+    }
+
+    .subTotal {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .taxes {
+        font-size: 15px;
+        word-spacing: 1px;
+        text-align: center;
+        margin: 8px;
+        color: gray;
+        font-weight: bold;
+    }
+
+    .checkoutDiv {
+        width: 250px
+    }
+}
+
+/* ///////////////////////// */
+@media (min-width:600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+
+    table {
+        width: 500px !important;
+    }
+
+    .item {
+        width: 300px !important;
+    }
+
+    .itemInfo {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto !important;
+        align-items: center;
+        border: none;
+    }
+
+    .itemInfo h3 {
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .cartImg {
+        height: 80px;
+        margin: 14px;
+    }
+
+    .quantityTd {
+        border: 2px solid green;
+        width: 130px !important;
+    }
+
+    .quantity {
+        width: 100px !important;
+    }
+
+    .quantity button {
+        padding: .1rem .1rem;
+
+    }
+
+    .trash {
+        color: black;
+        background-color: transparent;
+        font-size: 12px;
+    }
+
+    .cartSummary {
+        display: flex;
+        flex-direction: column;
+        height: 250px;
+        text-align: right;
+        position: relative;
+        transform: translateX(50px);
+    }
+
+    .total {
+        width: 300px !important;
+    }
+
+    .subTotal {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .taxes {
+        font-size: 15px;
+        word-spacing: 1px;
+        text-align: center;
+        margin: 8px;
+        color: gray;
+        font-weight: bold;
+    }
+
+    .checkoutDiv {
+        width: 270px
+    }
+}
+
+/* ///////////////////////// */
+@media (min-width:768px) {
+    h1 {
+        font-size: 30px;
+    }
+
+
+    table {
+        width: 750px !important;
+    }
+
+    .item {
+        width: 400px !important;
+    }
+
+    .itemInfo {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto !important;
+        align-items: center;
+        border: none;
+    }
+
+    .itemInfo h3 {
+        font-weight: bold;
+        font-size: 17px;
+    }
+
+    .cartImg {
+        height: 90px;
+        margin: 14px;
+    }
+
+    .quantityTd {
+        border: 2px solid green;
+        width: 140px !important;
+    }
+
+    .quantity {
+        width: 120px !important;
+    }
+
+    .quantity button {
+        padding: .3rem 1.1rem;
+
+    }
+
+    .trash {
+        color: black;
+        background-color: transparent;
+        font-size: 13px;
+    }
+
+    .cartSummary {
+        display: flex;
+        flex-direction: column;
+        height: 260px;
+        text-align: right;
+        position: relative;
+        transform: translateX(90px);
+    }
+
+    .total {
+        width: 350px !important;
+    }
+
+    .subTotal {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .taxes {
+        font-size: 18px;
+        word-spacing: 1px;
+        text-align: center;
+        margin: 8px;
+        color: gray;
+        font-weight: bold;
+    }
+
+    .checkoutDiv {
+        width: 280px
+    }
+
+}
+
+/* /////////////// */
+@media (min-width:992px) {
+    h1 {
+        font-size: 30px;
+    }
+
+}
+
+table {
+    width: 900px !important;
+}
+
+.item {
+    width: 500px !important;
+}
+
+.itemInfo {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto !important;
+    align-items: center;
+    border: none;
+}
+
+.itemInfo h3 {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.cartImg {
+    height: 100px;
+    margin: 14px;
+}
+
+.quantityTd {
+    border: 2px solid green;
+    width: 150px !important;
+}
+
+.quantity {
+    width: 130px !important;
+}
+
+.quantity button {
+    padding: .3rem 1.1rem;
+
+}
+
+.trash {
+    color: black;
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.cartSummary {
+    display: flex;
+    flex-direction: column;
+    height: 270px;
+    text-align: right;
+    position: relative;
+    transform: translateX(240px);
+}
+
+.total {
+    width: 360px !important;
+}
+
+.subTotal {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.taxes {
+    font-size: 19px;
+    word-spacing: 1px;
+    text-align: center;
+    margin: 8px;
+    color: gray;
+    font-weight: bold;
+}
+
+.checkoutDiv {
+    width: 290px
+}
+
+
+
+/* /////////////// */
+
+@media (min-width:1200px) {
+    h1 {
+        font-size: 30px;
+    }
+
+
+
+    table {
+        width: 1000px !important;
+    }
+
+    .item {
+        width: 00px !important;
+    }
+
+    .itemInfo {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto !important;
+        align-items: center;
+        border: none;
+    }
+
+    .itemInfo h3 {
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .cartImg {
+        height: 110px;
+        margin: 14px;
+    }
+
+    .quantityTd {
+        border: 2px solid green;
+        width: 160px !important;
+    }
+
+    .quantity {
+        width: 140px !important;
+    }
+
+    .quantity button {
+        padding: .4rem 1.2rem;
+
+    }
+
+    .trash {
+        color: black;
+        background-color: transparent;
+        font-size: 15px;
+    }
+
+    .cartSummary {
+        display: flex;
+        flex-direction: column;
+        height: 280px;
+        text-align: right;
+        position: relative;
+        transform: translateX(300px);
+    }
+
+    .total {
+        width: 300px !important;
+    }
+
+    .subTotal {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .taxes {
+        font-size: 20px;
+        word-spacing: 1px;
+        text-align: center;
+        margin: 8px;
+        color: gray;
+        font-weight: bold;
+    }
+
+    .checkoutDiv {
+        width: 300px
+    }
 }

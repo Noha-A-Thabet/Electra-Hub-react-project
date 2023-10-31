@@ -71,7 +71,7 @@ const Cart = () => {
                         <h3>{name}</h3>
                       </td>
                       <td className={classes.price}>${price}</td>
-                      <td>
+                      <td className={classes.quantityTd}>
                         <div className={classes.quantity}>
                           <button onClick={decreaseItems}>-</button>
                           <div className={classes.quantityNumber}>
