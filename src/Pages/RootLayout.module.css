@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,400;0,500;0,700;1,400&display=swap');
 
-
 * {
     margin: 0;
     padding: 0;
@@ -14,10 +13,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* position: fixed;
-    top: 0;
-    width: fit-content;
-    z-index: 1000 */
 }
 
 /* logo */
@@ -87,6 +82,20 @@
 
 
 .length {
+    color: wheat !important;
+    background-color: black;
+    position: relative;
+    border-radius: 50px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    left: 30px;
+    bottom: 18px;
+    font-size: 15px !important;
+}
+
+.likes {
     color: wheat !important;
     background-color: black;
     position: relative;

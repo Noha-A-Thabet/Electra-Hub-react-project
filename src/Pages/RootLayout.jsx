@@ -3,15 +3,20 @@ import { Outlet, Link } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import classes from "./RootLayout.module.css";
 import { getTotal } from "../Components/Redux/cartSlice";
-
+import { getTotalLikes } from "../Components/Redux/favouriteSlice";
 const RootLayout = () => {
   const [openMenu, setOpenMenu] = useState(true);
-  const [showLength, setShowLenght] = useState(true);
+  const [showCartLength, setShowCartLenght] = useState(true);
+  const [showLikes, setShowLikes] = useState(true);
 
   const showNavbar = () => {
     setOpenMenu((prev) => !prev);
   };
   const cartItems = useSelector((state) => state.cart.cartItems);
+  const listItems = useSelector((state) => state.listItems.listItems);
+  const cartTotalQunatity = useSelector(
+    (state) => state.cart.cartTotalQunatity
+  );
 
   const dispatch = useDispatch();
 
@@ -19,15 +24,20 @@ const RootLayout = () => {
     dispatch(getTotal());
     // check length of cartItems
     if (cartItems.length === 0) {
-      setShowLenght(false);
+      setShowCartLenght(false);
     } else {
-      setShowLenght(true);
+      setShowCartLenght(true);
     }
   }, [cartItems]);
-  const cartTotalQunatity = useSelector(
-    (state) => state.cart.cartTotalQunatity
-  );
-  console.log(cartTotalQunatity);
+
+  useEffect(() => {
+    dispatch(getTotalLikes());
+    if (listItems.length === 0) {
+      setShowLikes(false);
+    } else {
+      setShowLikes(true);
+    }
+  }, [listItems]);
 
   return (
     <>
@@ -52,12 +62,15 @@ const RootLayout = () => {
                 </li>
                 <li>
                   <Link to="whishList" className={classes.links}>
+                    {showLikes && (
+                      <span className={classes.likes}>{listItems.length}</span>
+                    )}
                     <i class="fa-regular fa-heart"></i>
                   </Link>
                 </li>
                 <li>
                   <Link to="cart" className={classes.links}>
-                    {showLength && (
+                    {showCartLength && (
                       <span className={classes.length}>
                         {cartTotalQunatity}
                       </span>

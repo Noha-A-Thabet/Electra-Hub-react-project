@@ -18,7 +18,7 @@ const WhishList = () => {
             <div className={classes.emptyCart}>
               <p className={classes.emptyPara}>
                 Heart items to keep track of them here. Try it. (You’ll like
-                it.){" "}
+                it.)
               </p>
               <Link to="/" className={classes.emptyLink}>
                 <i class="fa-solid fa-arrow-left"></i>
@@ -42,7 +42,7 @@ const WhishList = () => {
 
                   // remove items
                   const removeItemHandler = () => {
-                    dispatch(removeFromFav({ id: item.id }));
+                    dispatch(removeFromFav({ id: item.id, name: item.name }));
                   };
 
                   return (
