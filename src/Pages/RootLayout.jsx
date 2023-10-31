@@ -1,13 +1,33 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Outlet, Link } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
 import classes from "./RootLayout.module.css";
+import { getTotal } from "../Components/Redux/cartSlice";
 
 const RootLayout = () => {
   const [openMenu, setOpenMenu] = useState(true);
+  const [showLength, setShowLenght] = useState(true);
 
   const showNavbar = () => {
     setOpenMenu((prev) => !prev);
   };
+  const cartItems = useSelector((state) => state.cart.cartItems);
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(getTotal());
+    // check length of cartItems
+    if (cartItems.length === 0) {
+      setShowLenght(false);
+    } else {
+      setShowLenght(true);
+    }
+  }, [cartItems]);
+  const cartTotalQunatity = useSelector(
+    (state) => state.cart.cartTotalQunatity
+  );
+  console.log(cartTotalQunatity);
 
   return (
     <>
@@ -27,17 +47,22 @@ const RootLayout = () => {
               <ul>
                 <li>
                   <Link to="signIn" className={classes.links}>
-                    Login <i class="fa-regular fa-user "></i>
+                    <i class="fa-regular fa-user "></i>
                   </Link>
                 </li>
                 <li>
                   <Link to="whishList" className={classes.links}>
-                    Whishlist <i class="fa-regular fa-heart"></i>
+                    <i class="fa-regular fa-heart"></i>
                   </Link>
                 </li>
                 <li>
                   <Link to="cart" className={classes.links}>
-                    Cart <i class="fa-solid fa-cart-shopping"></i>
+                    {showLength && (
+                      <span className={classes.length}>
+                        {cartTotalQunatity}
+                      </span>
+                    )}
+                    <i class="fa-solid fa-cart-shopping"></i>
                   </Link>
                 </li>
               </ul>

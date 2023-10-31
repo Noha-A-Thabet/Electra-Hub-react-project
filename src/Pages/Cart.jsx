@@ -56,7 +56,7 @@ const Cart = () => {
 
                   // remove items Handler
                   const removeItemHandler = () => {
-                    dispatch(removeItem({ id: item.id }));
+                    dispatch(removeItem({ id: item.id, name: item.name }));
                   };
 
                   // decrease cart items

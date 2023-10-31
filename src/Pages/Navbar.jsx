@@ -17,23 +17,20 @@ const Navbar = () => {
           <li>
             <Link className="active" to="#">
               Home
-            </Link>{" "}
+            </Link>
           </li>
           <li>
-            <Link href="/Sign">
-              {" "}
+            <Link to="/Sign">
               Sign in <i class="fa-regular fa-user"></i>{" "}
             </Link>
           </li>
           <li>
-            <Link href="#">
-              {" "}
+            <Link to="#">
               Wishlist <i class="fa-regular fa-heart"></i>{" "}
             </Link>
           </li>
           <li>
-            <Link href="#">
-              {" "}
+            <Link to="#">
               Cart <i class="fa-solid fa-cart-shopping"></i>
             </Link>
           </li>
